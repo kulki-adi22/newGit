@@ -1,4 +1,4 @@
-//sum of matrices
+1. //sum of matrices
 #include<stdio.h>
 int i,j; 
 int calc( int mat1[2][2], int mat2[2][2])
@@ -43,4 +43,25 @@ int main()
         }
     }
     calc(mat1,mat2);
+}
+2. 
+//1.average of n numbers
+//2.sum of two matrices
+# include<stdio.h>
+int i;
+int main()
+{
+    int n,num,sum=0, avg=0;
+    printf("Enter the number of numbers");
+    scanf("%d",&n);
+    printf("\nEnter the numbers");
+    for(i=1;i<=n;i++)
+    {
+        printf("\nEnter the %d number",i);
+        scanf("%d",&num);
+        sum+=num;
+    }
+    avg=sum/n;
+    printf("\nAverage of the entered numbers is %d ",avg);
+    
 }
