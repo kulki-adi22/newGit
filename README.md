@@ -65,3 +65,19 @@ int main()
     printf("\nAverage of the entered numbers is %d ",avg);
     
 }
+3. 
+//A3 : Convert temperature in fahrenheit to celsius
+#include<stdio.h>
+int convert(int fTemp)
+{
+    return (( fTemp-32)/1.8);
+}
+int main()
+{
+    int fTemp, cTemp;
+    printf("Fahrenheit temp?");
+    scanf("%d",&fTemp);
+    cTemp=convert(fTemp);
+    printf("\nCelcius temp is: %d",cTemp);
+    return 0;
+}
